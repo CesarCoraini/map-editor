@@ -25,6 +25,14 @@ public class Grid {
         }
     }
 
+    public void clear() {
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                cells[row][col].erase();
+            }
+        }
+    }
+
     public int getRows() {
         return rows;
     }
@@ -50,4 +58,6 @@ public class Grid {
 
         return stringBuilder.toString();
     }
+
+
 }

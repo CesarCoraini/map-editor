@@ -11,7 +11,7 @@ public class Grid {
 
     private Cell[][] cells;
 
-    private Grid(int rows, int cols) {
+    public Grid(int rows, int cols) {
 
         this.rows = rows;
         this.cols = cols;
@@ -33,7 +33,7 @@ public class Grid {
         return cols;
     }
 
-    public Cell[][] getCells(int row, int col) {
+    public Cell getCells(int row, int col) {
         return cells[row][col];
     }
 

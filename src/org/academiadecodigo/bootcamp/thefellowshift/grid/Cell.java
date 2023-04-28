@@ -11,7 +11,7 @@ public class Cell {
     private Rectangle rectangle;
     private boolean painted;
 
-    private Cell(int row, int col) {
+    public Cell(int row, int col) {
         this.row = row;
         this.col = col;
 

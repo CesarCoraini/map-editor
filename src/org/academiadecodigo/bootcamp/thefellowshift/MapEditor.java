@@ -2,6 +2,7 @@ package org.academiadecodigo.bootcamp.thefellowshift;
 
 import org.academiadecodigo.bootcamp.thefellowshift.grid.Cell;
 import org.academiadecodigo.bootcamp.thefellowshift.grid.Cursor;
+import org.academiadecodigo.bootcamp.thefellowshift.utils.FileManager;
 
 public class MapEditor {
 
@@ -54,9 +55,11 @@ public class MapEditor {
     }
 
     public void save() {
+        FileManager.writeToFile(grid.toString());
     }
 
     public void load() {
+        grid.stringToGrid(FileManager.readFile());
     }
 
     public void setPaiting(boolean paiting) {

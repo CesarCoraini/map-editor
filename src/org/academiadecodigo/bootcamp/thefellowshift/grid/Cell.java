@@ -9,7 +9,7 @@ public class Cell {
     protected int row;
     protected int col;
     protected Rectangle rectangle;
-    protected boolean painted;
+    private boolean painted;
 
     public Cell(int row, int col) {
         this.row = row;

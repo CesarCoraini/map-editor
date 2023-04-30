@@ -33,6 +33,27 @@ public class Grid {
         }
     }
 
+    public void stringToGrid(String grid) {
+
+        int index = 0;
+
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+
+                Cell cell = cells[row][col];
+
+                if(grid.charAt(index) == '0') {
+                    cell.erase();
+                } else {
+                    cell.paint();
+                }
+
+                index++;
+            }
+            index++;
+        }
+    }
+
     public int getRows() {
         return rows;
     }
